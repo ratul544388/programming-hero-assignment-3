@@ -1,0 +1,422 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <title>Nature's Platter</title>
+  </head>
+  <body class="bg-primary bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+    <header
+      class="sticky top-0 z-30 h-24 border-[1.5px] border-b border-gray-200 bg-white"
+    >
+      <div class="max-width-wrapper flex h-full items-center justify-between">
+        <img
+          src="/src/assets/logo-header.png"
+          class="hidden w-32 lg:block"
+          alt="logo"
+        />
+        <img src="/src/assets/mobile-logo.png" class="lg:hidden" alt="logo" />
+        <nav class="hidden md:block">
+          <ul class="test flex gap-6 font-medium">
+            <li>
+              <a href="#products"> Product </a>
+            </li>
+            <li>
+              <a href="#Services"> Services </a>
+            </li>
+            <li>
+              <a href="#about"> About </a>
+            </li>
+            <li>
+              <a href="#contact-us"> Contact us </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hidden items-center gap-3 md:flex">
+          <div class="flex gap-2">
+            <button class="btn-icon btn-ghost">
+              <i data-lucide="search"></i>
+            </button>
+            <button class="btn-icon btn-ghost">
+              <i data-lucide="shopping-cart"></i>
+            </button>
+          </div>
+          <button class="btn-outline">Login</button>
+          <button class="btn-primary">Register</button>
+        </div>
+        <div class="relative md:hidden">
+          <input
+            type="checkbox"
+            class="peer absolute inset-0 z-50 cursor-pointer opacity-0"
+          />
+          <i
+            data-lucide="menu"
+            class="relative z-40 size-12 rounded-full p-2 transition-colors peer-checked:hidden peer-hover:bg-zinc-200"
+          ></i>
+          <i
+            data-lucide="x"
+            class="relative z-40 hidden size-12 rounded-full p-2 transition-colors peer-checked:block peer-hover:bg-zinc-200"
+          ></i>
+          <aside
+            class="fixed inset-y-0 right-0 z-30 w-[75%] translate-x-full border-l border-gray-200 bg-white p-6 transition-all duration-300 ease-in-out peer-checked:block peer-checked:translate-x-0"
+          >
+            <img src="/src/assets/logo-header.png" class="w-32" alt="logo" />
+            <nav class="mt-10">
+              <ul class="space-y-6 font-medium">
+                <li>
+                  <a href="#products"> Product </a>
+                </li>
+                <li>
+                  <a href="#Services"> Services </a>
+                </li>
+                <li>
+                  <a href="#about"> About </a>
+                </li>
+                <li>
+                  <a href="#contact-us"> Contact us </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <span
+            class="fixed inset-0 bg-neutral-950/50 opacity-0 pointer-events-none transition-opacity duration-300 peer-checked:opacity-100"
+          ></span>
+        </div>
+      </div>
+    </header>
+    <main class="">
+      <section
+        class="max-width-wrapper flex flex-col items-center gap-3 pt-14 text-center"
+      >
+        <h1
+          class="text-4xl leading-[50px] font-bold sm:text-5xl sm:leading-[65px]"
+        >
+          Freshness
+          <span class="text-green-600"
+            >You Can <br />
+            Count</span
+          >
+          On, Prices You&apos;ll Love!
+        </h1>
+        <p class="text-gray-600">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry <br />
+          staples, we have got you covered every day!
+        </p>
+        <img src="/src/assets/hero-vegetables.png" alt="Hero Vegetables" />
+      </section>
+      <section class="bg-white py-20">
+        <div class="max-width-wrapper">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-600">Services</h2>
+          <ul class="mt-6 grid gap-5 md:grid-cols-3">
+            <li class="flex flex-col items-center rounded-md bg-gray-200 p-5">
+              <img
+                src="/src/assets/service.png"
+                alt="Service"
+                class="rounded-full bg-white p-3"
+              />
+              <h4 class="mt-3 font-semibold">24/7 Customer Support</h4>
+              <p class="mt-1 text-center text-zinc-600">
+                Our dedicated support team is available around the clock to assist with inquiries, orders, and any issues you may encounter.
+              </p>
+            </li>
+            <li class="flex flex-col items-center rounded-md bg-gray-200 p-5">
+              <img
+                src="/src/assets/delivery.png"
+                alt="Delivery"
+                class="rounded-full bg-white p-3"
+              />
+              <h4 class="mt-3 font-semibold">Fast & Reliable Delivery</h4>
+              <p class="mt-1 text-center text-zinc-600">
+                We ensure quick and secure delivery to your doorstep, with real-time tracking and hassle-free service.
+              </p>
+            </li>
+            <li class="flex flex-col items-center rounded-md bg-gray-200 p-5">
+              <img
+                src="/src/assets/healthy.png"
+                alt="Health"
+                class="rounded-full bg-white p-3"
+              />
+              <h4 class="mt-3 font-semibold">Fresh & Healthy Products</h4>
+              <p class="mt-1 text-center text-zinc-600">
+                We source only the freshest and highest-quality products to ensure you receive nutritious and safe ingredients every time.
+              </p>
+            </li>
+          </ul>
+          
+        </div>
+      </section>
+      <section class="max-width-wrapper py-20">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-600">Popular Products</h2>
+        <ul class="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-5">
+          <li
+            class="relative col-span-2 row-span-4 min-h-[320px] rounded-md bg-gradient-to-b from-green-600 to-green-300 p-7 xl:row-span-3"
+          >
+            <h4 class="text-xl font-semibold text-white">30% off</h4>
+            <p class="mt-3 text-white">
+              Discover a world of treats toys, and essentials handpicked for
+            </p>
+            <button class="btn-secondary mt-3">Buy Now</button>
+            <div class="absolute right-4 bottom-0 w-56">
+              <img
+                src="/src/assets/vegetable-offer.png"
+                alt="Vegetables offer"
+              />
+            </div>
+          </li>
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/tomato.png" alt="Fresh Tomatoes" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.6
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Tomato 1 KG</h5>
+              <p>$18.99</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/tomato.png" alt="Organic Tomatoes" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.7
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Tomato 1.5 KG</h5>
+              <p>$25.49</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/tomato.png" alt="Cherry Tomatoes" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.8
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Tomato 2 KG</h5>
+              <p>$31.99</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/potato.png" alt="Fresh Potatoes" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.5
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Potato 1 KG</h5>
+              <p>$10.99</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/potato.png" alt="Golden Potatoes" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.6
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Potato 2 KG</h5>
+              <p>$19.49</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/potato.png" alt="Russet Potatoes" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.7
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Potato 3 KG</h5>
+              <p>$28.99</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/onion.png" alt="Red Onions" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.6
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Onion 1 KG</h5>
+              <p>$30.99</p>
+            </div>
+          </li>
+          
+          <li class="flex items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/onion.png" alt="White Onions" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.7
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Onion 2 KG</h5>
+              <p>$40.99</p>
+            </div>
+          </li>
+          
+          <li class="xl:flex hidden items-center gap-2 rounded-md bg-white p-3">
+            <div>
+              <img src="/src/assets/onion.png" alt="Yellow Onions" class="h-full rounded-md bg-gray-200" />
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <img src="/src/assets/star.svg" alt="star" class="size-4" />
+                4.8
+              </div>
+              <h5 class="font-medium whitespace-nowrap">Onion 3 KG</h5>
+              <p>$52.99</p>
+            </div>
+          </li>
+          
+        </ul>
+      </section>
+      <section class="bg-white pt-20 pb-80 md:pb-60">
+        <div class="max-width-wrapper">
+          <h2 class="text-3xl md:text-4xl font-bold text-green-600">Arrival & Offers</h2>
+          <ul class="mt-6 grid gap-4 lg:grid-cols-5">
+            <li
+              class="flex items-center justify-between gap-5 rounded-xl bg-green-800 p-5 lg:col-span-3"
+            >
+              <div class="space-y-4">
+                <img src="/src/assets/dawat-logo.png" alt="Dawat Logo" />
+                <button class="btn-primary">Cook Exptic Dishes</button>
+                <p class="text-lg text-white">
+                  UP to <span class="font-bold">20% OFF</span>
+                </p>
+              </div>
+              <div>
+                <img src="/src/assets/dawat-mock-up.png" alt="Dawat Mock up" />
+              </div>
+            </li>
+            <li
+              class="flex items-center justify-between gap-5 rounded-xl bg-blue-950 p-5 lg:col-span-2"
+            >
+              <div class="flex flex-col gap-3">
+                <div>
+                  <img src="/src/assets/india-gate-logo.png" alt="India gate" />
+                </div>
+                <button class="bg-blue-800 text-white">
+                  Cook Exptic Dishes
+                </button>
+                <p class="text-lg text-white">
+                  UP to <span class="font-bold">20% OFF</span>
+                </p>
+              </div>
+              <div>
+                <img
+                  src="/src/assets/india-gate-mock-up.png"
+                  alt="Dawat Mock up"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="relative bg-green-600 pt-80 pb-20">
+      <div class="max-width-wrapper">
+        <section
+          class="absolute top-0 left-1/2 flex -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-5 rounded-xl bg-gray-200 p-5 md:flex-row"
+        >
+          <img
+            src="assets/vegetable-busket.png"
+            alt="Vegetable busket"
+            class="max-w-[300px]"
+          />
+          <div class="flex flex-col items-center gap-4 md:items-start">
+            <h3 class="text-2xl font-bold text-green-600 md:text-black">Get Grocery News</h3>
+            <p class="">
+              Exclusive training tips, tricks, product deals and more.
+            </p>
+            <input
+              type="email"
+              class="h-12 w-full max-w-md rounded-md bg-white px-4 outline-none"
+              placeholder="Enter your email"
+            />
+            <button class="btn-primary">Subscribe</button>
+          </div>
+        </section>
+        <div
+          class="flex w-full flex-col justify-between gap-x-5 gap-y-10 text-white md:flex-row md:items-center"
+        >
+          <div>
+            <img src="assets/logo-footer.png" alt="Logo" />
+            <p class="mt-3 text-gray-100">
+              Discover a world of treats, toys, and <br />
+              essentials handpicked for your furry friends
+            </p>
+          </div>
+          <nav>
+            <ul class="space-y-3">
+              <li>
+                <a href="#products">Products</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#contact">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+          <div>
+            <h6 class="font-medium">Follow Us</h6>
+            <nav class="mt-2">
+              <ul class="flex gap-3">
+                <li>
+                  <a href="#facebook">
+                    <i data-lucide="facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#instagram">
+                    <i data-lucide="instagram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#linkdin">
+                    <i data-lucide="linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#youtube">
+                    <i data-lucide="youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

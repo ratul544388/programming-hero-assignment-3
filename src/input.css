@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: "Fira Sans", serif;
+}
+
+:root {
+  --primary: #179800;
+}
+
+.max-width-wrapper {
+  @apply mx-auto max-w-screen-2xl px-4;
+}
+
+button {
+  @apply h-10 cursor-pointer rounded-lg px-6 font-medium transition-colors select-none whitespace-nowrap w-fit;
+}
+
+.btn-primary {
+  @apply bg-green-600 hover:bg-green-600/90 text-white;
+}
+
+.btn-outline {
+  @apply border-[1.5px] border-green-600 bg-white hover:bg-zinc-100;
+}
+
+.btn-icon {
+  @apply flex size-10 items-center justify-center rounded-full p-0;
+}
+
+.btn-ghost {
+  @apply hover:bg-zinc-100;
+}
+
+.btn-secondary {
+  @apply bg-white text-black hover:bg-white/90;
+}
