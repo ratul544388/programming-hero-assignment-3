@@ -28,9 +28,6 @@
               <a href="#Services"> Services </a>
             </li>
             <li>
-              <a href="#about"> About </a>
-            </li>
-            <li>
               <a href="#contact-us"> Contact us </a>
             </li>
           </ul>
@@ -73,23 +70,24 @@
                   <a href="#Services"> Services </a>
                 </li>
                 <li>
-                  <a href="#about"> About </a>
-                </li>
-                <li>
                   <a href="#contact-us"> Contact us </a>
                 </li>
               </ul>
             </nav>
+            <div class="mt-10 space-x-5">
+              <button class="btn-outline">Login</button>
+              <button class="btn-primary">Register</button>
+            </div>
           </aside>
           <span
-            class="fixed inset-0 bg-neutral-950/50 opacity-0 pointer-events-none transition-opacity duration-300 peer-checked:opacity-100"
+            class="pointer-events-none fixed inset-0 bg-neutral-950/50 opacity-0 transition-opacity duration-300 peer-checked:opacity-100"
           ></span>
         </div>
       </div>
     </header>
     <main class="">
       <section
-        class="max-width-wrapper flex flex-col items-center gap-3 pt-14 text-center"
+        class="hero max-width-wrapper relative flex flex-col items-center gap-3 overflow-hidden pt-14 text-center"
       >
         <h1
           class="text-4xl leading-[50px] font-bold sm:text-5xl sm:leading-[65px]"
@@ -107,10 +105,42 @@
           staples, we have got you covered every day!
         </p>
         <img src="assets/hero-vegetables.png" alt="Hero" />
+        <img
+          src="assets/leaf.png"
+          alt="Leaf"
+          class="falling-item absolute w-20 rotate-90 opacity-50"
+        />
+        <img
+          src="assets/watermelon.png"
+          alt="Leaf"
+          class="falling-item absolute left-[10%] w-20 opacity-50 delay-5 ![animation-delay:2s]"
+        />
+        <img
+          src="assets/pumpkin.png"
+          alt="Leaf"
+          class="falling-item absolute right-[10%] w-20 opacity-50 delay-5 ![animation-delay:5s]"
+        />
+        <img
+          src="assets/carrot.png"
+          alt="Leaf"
+          class="falling-item absolute left-[30%] w-20 opacity-50 delay-5 ![animation-delay:8s]"
+        />
+        <img
+          src="assets/tomato-falling.png"
+          alt="Leaf"
+          class="falling-item absolute right-[30%] w-20 opacity-50 delay-5 ![animation-delay:13s]"
+        />
+        <img
+          src="assets/onion-falling.png"
+          alt="Leaf"
+          class="falling-item absolute left-[30%] w-20 opacity-50 delay-5 ![animation-delay:16s]"
+        />
       </section>
       <section class="bg-white py-20">
         <div class="max-width-wrapper">
-          <h2 class="text-3xl md:text-4xl font-bold text-green-600">Services</h2>
+          <h2 class="text-3xl font-bold text-green-600 md:text-4xl">
+            Services
+          </h2>
           <ul class="mt-6 grid gap-5 md:grid-cols-3">
             <li class="flex flex-col items-center rounded-md bg-gray-200 p-5">
               <img
@@ -120,7 +150,8 @@
               />
               <h4 class="mt-3 font-semibold">24/7 Customer Support</h4>
               <p class="mt-1 text-center text-zinc-600">
-                Our dedicated support team is available around the clock to assist with inquiries, orders, and any issues you may encounter.
+                Our dedicated support team is available around the clock to
+                assist with inquiries, orders, and any issues you may encounter.
               </p>
             </li>
             <li class="flex flex-col items-center rounded-md bg-gray-200 p-5">
@@ -131,7 +162,8 @@
               />
               <h4 class="mt-3 font-semibold">Fast & Reliable Delivery</h4>
               <p class="mt-1 text-center text-zinc-600">
-                We ensure quick and secure delivery to your doorstep, with real-time tracking and hassle-free service.
+                We ensure quick and secure delivery to your doorstep, with
+                real-time tracking and hassle-free service.
               </p>
             </li>
             <li class="flex flex-col items-center rounded-md bg-gray-200 p-5">
@@ -142,15 +174,17 @@
               />
               <h4 class="mt-3 font-semibold">Fresh & Healthy Products</h4>
               <p class="mt-1 text-center text-zinc-600">
-                We source only the freshest and highest-quality products to ensure you receive nutritious and safe ingredients every time.
+                We source only the freshest and highest-quality products to
+                ensure you receive nutritious and safe ingredients every time.
               </p>
             </li>
           </ul>
-          
         </div>
       </section>
       <section class="max-width-wrapper py-20">
-        <h2 class="text-3xl md:text-4xl font-bold text-green-600">Popular Products</h2>
+        <h2 class="text-3xl font-bold text-green-600 md:text-4xl">
+          Popular Products
+        </h2>
         <ul class="mt-6 grid grid-cols-2 gap-4 lg:grid-cols-4 xl:grid-cols-5">
           <li
             class="relative col-span-2 row-span-4 min-h-[320px] rounded-md bg-gradient-to-b from-green-600 to-green-300 p-7 xl:row-span-3"
@@ -161,15 +195,16 @@
             </p>
             <button class="btn-secondary mt-3">Buy Now</button>
             <div class="absolute right-4 bottom-0 w-56">
-              <img
-                src="assets/vegetable-offer.png"
-                alt="Vegetables offer"
-              />
+              <img src="assets/vegetable-offer.png" alt="Vegetables offer" />
             </div>
           </li>
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/tomato.png" alt="Fresh Tomatoes" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/tomato.png"
+                alt="Fresh Tomatoes"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -180,10 +215,14 @@
               <p>$18.99</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/tomato.png" alt="Organic Tomatoes" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/tomato.png"
+                alt="Organic Tomatoes"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -194,10 +233,14 @@
               <p>$25.49</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/tomato.png" alt="Cherry Tomatoes" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/tomato.png"
+                alt="Cherry Tomatoes"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -208,10 +251,14 @@
               <p>$31.99</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/potato.png" alt="Fresh Potatoes" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/potato.png"
+                alt="Fresh Potatoes"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -222,10 +269,14 @@
               <p>$10.99</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/potato.png" alt="Golden Potatoes" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/potato.png"
+                alt="Golden Potatoes"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -236,10 +287,14 @@
               <p>$19.49</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/potato.png" alt="Russet Potatoes" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/potato.png"
+                alt="Russet Potatoes"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -250,10 +305,14 @@
               <p>$28.99</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/onion.png" alt="Red Onions" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/onion.png"
+                alt="Red Onions"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -264,10 +323,14 @@
               <p>$30.99</p>
             </div>
           </li>
-          
+
           <li class="flex items-center gap-2 rounded-md bg-white p-3">
             <div>
-              <img src="assets/onion.png" alt="White Onions" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/onion.png"
+                alt="White Onions"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -278,10 +341,14 @@
               <p>$40.99</p>
             </div>
           </li>
-          
-          <li class="xl:flex hidden items-center gap-2 rounded-md bg-white p-3">
+
+          <li class="hidden items-center gap-2 rounded-md bg-white p-3 xl:flex">
             <div>
-              <img src="assets/onion.png" alt="Yellow Onions" class="h-full rounded-md bg-gray-200" />
+              <img
+                src="assets/onion.png"
+                alt="Yellow Onions"
+                class="h-full rounded-md bg-gray-200"
+              />
             </div>
             <div>
               <div class="flex items-center gap-2">
@@ -292,12 +359,13 @@
               <p>$52.99</p>
             </div>
           </li>
-          
         </ul>
       </section>
-      <section class="bg-white pt-20 pb-80 md:pb-60">
+      <section class="bg-white py-20">
         <div class="max-width-wrapper">
-          <h2 class="text-3xl md:text-4xl font-bold text-green-600">Arrival & Offers</h2>
+          <h2 class="text-3xl font-bold text-green-600 md:text-4xl">
+            Arrival & Offers
+          </h2>
           <ul class="mt-6 grid gap-4 lg:grid-cols-5">
             <li
               class="flex items-center justify-between gap-5 rounded-xl bg-green-800 p-5 lg:col-span-3"
@@ -328,11 +396,43 @@
                 </p>
               </div>
               <div>
-                <img
-                  src="assets/india-gate-mock-up.png"
-                  alt="Dawat Mock up"
-                />
+                <img src="assets/india-gate-mock-up.png" alt="Dawat Mock up" />
               </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="bg-white pt-20 pb-80 md:pb-60">
+        <div class="max-width-wrapper">
+          <h2 class="text-3xl font-bold text-green-600 md:text-4xl">
+            Contact us
+          </h2>
+          <ul class="mt-6 grid w-full gap-5 sm:grid-cols-2">
+            <li
+              class="flex w-full flex-col items-center gap-4 rounded-lg bg-gray-200 px-6 py-10 text-center"
+            >
+              <h3 class="text-2xl sm:text-3xl font-bold text-green-600">
+                Talk to a member of our Sales team
+              </h3>
+              <p>
+                Help you find the right products and pricing for your business.
+              </p>
+              <button class="btn-primary w-full max-w-[400px]">
+                Contact Sales
+              </button>
+            </li>
+            <li
+              class="flex w-full flex-col items-center gap-4 rounded-lg bg-gray-200 px-6 py-10 text-center"
+            >
+              <h3 class="text-2xl sm:text-3xl font-bold text-green-600">
+                Talk to a member of our Sales team
+              </h3>
+              <p>
+                Help you find the right products and pricing for your business.
+              </p>
+              <button class="btn-primary w-full max-w-[400px]">
+                Contact Sales
+              </button>
             </li>
           </ul>
         </div>
@@ -349,7 +449,9 @@
             class="max-w-[300px]"
           />
           <div class="flex flex-col items-center gap-4 md:items-start">
-            <h3 class="text-2xl font-bold text-green-600 md:text-black">Get Grocery News</h3>
+            <h3 class="text-2xl font-bold text-green-600 md:text-black">
+              Get Grocery News
+            </h3>
             <p class="">
               Exclusive training tips, tricks, product deals and more.
             </p>

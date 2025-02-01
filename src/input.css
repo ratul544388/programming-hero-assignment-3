@@ -10,15 +10,15 @@
 }
 
 .max-width-wrapper {
-  @apply mx-auto max-w-screen-2xl px-4;
+  @apply mx-auto w-full max-w-screen-2xl px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12;
 }
 
 button {
-  @apply h-10 cursor-pointer rounded-lg px-6 font-medium transition-colors select-none whitespace-nowrap w-fit;
+  @apply h-10 cursor-pointer rounded-lg px-6 font-medium whitespace-nowrap transition-colors select-none;
 }
 
 .btn-primary {
-  @apply bg-green-600 hover:bg-green-600/90 text-white;
+  @apply bg-green-600 text-white hover:bg-green-600/90;
 }
 
 .btn-outline {
@@ -35,4 +35,15 @@ button {
 
 .btn-secondary {
   @apply bg-white text-black hover:bg-white/90;
+}
+
+.hero .falling-item {
+  top: -100px;
+  animation: leafFalling 10s infinite linear;
+}
+
+@keyframes leafFalling {
+  to {
+    top: 100%;
+  }
 }
