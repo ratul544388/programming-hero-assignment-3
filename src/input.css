@@ -40,6 +40,7 @@ button {
 .hero .falling-item {
   top: -100px;
   animation: leafFalling 10s infinite linear;
+  
 }
 
 @keyframes leafFalling {
